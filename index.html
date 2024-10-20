@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M. Mohammed Salman - Portfolio</title>
+  <style>
+    /* General body styling */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      color: #333;
+      background-color: #f5f5f7; /* Light gray background for overall site */
+      overflow-x: hidden;
+    }
+
+    /* Hero section styling */
+    .hero {
+      height: 100vh;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(230, 230, 230, 0.9)), url('https://www.apple.com/ac/structured-data/images/open_graph_logo.png'); /* Subtle gradient with light image */
+      background-size: cover; /* Cover the entire hero area */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #333;
+      padding: 20px;
+      position: relative;
+    }
+
+    /* Image styling */
+    .hero img {
+      width: 150px; /* Adjust as needed */
+      height: auto;
+      border-radius: 50%; /* Circular image */
+      margin-bottom: 20px; /* Space below the image */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    }
+
+    /* Large, bold name styling */
+    .hero h1 {
+      font-size: 3em;
+      font-weight: bold;
+      margin: 0;
+      line-height: 1.2;
+      text-transform: uppercase;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    /* Summary paragraph styling */
+    .hero p {
+      font-size: 1.5em;
+      max-width: 800px;
+      line-height: 1.5;
+      margin: 20px 0;
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+
+    /* Buttons for navigation */
+    .hero .btn-group {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: fadeInUp 2s ease-in-out;
+    }
+
+    .btn {
+      background-color: #0070c9; /* Blue color similar to Apple */
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border-radius: 30px;
+      text-decoration: none;
+      margin: 10px;
+      transition: all 0.3s ease;
+      display: inline-block;
+      border: none;
+      outline: none;
+    }
+
+    .btn:hover {
+      background-color: #005bb5; /* Darker blue on hover */
+      transform: translateY(-3px);
+    }
+
+    /* Contact section */
+    .contact {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: #fff; /* Keep the contact section white */
+      color: #333;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    }
+
+    .contact h2 {
+      font-size: 3em;
+      margin-bottom: 30px;
+    }
+
+    .contact p {
+      font-size: 1.2em;
+      margin: 15px 0;
+    }
+
+    /* Section buttons */
+    .section-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin: 40px 0;
+    }
+
+    .section-button {
+      display: inline-block;
+      padding: 15px 25px;
+      border-radius: 15px;
+      background-color: #f5f5f7; /* Light background for buttons */
+      color: #0070c9;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2em;
+      text-align: center;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      border: 2px solid transparent;
+      min-width: 220px;
+    }
+
+    .section-button:hover {
+      background-color: #0070c9; /* Blue on hover */
+      color: white;
+      border-color: #0070c9;
+      transform: translateY(-5px);
+    }
+
+    /* Smooth scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Keyframe animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Footer styling */
+    footer {
+      padding: 20px;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="photo.jpg" alt="M. Mohammed Salman"> <!-- Replace with your image path -->
+    <h1>M. Mohammed Salman</h1>
+    <p>Results-driven Data Scientist with practical expertise in AI, machine learning, and data analytics. Passionate about innovation and contributing to forward-thinking organizations.</p>
+    <div class="btn-group">
+      <a href="#contact" class="btn">Contact Me</a>
+      <a href="#explore-more" class="btn">Explore More About Me</a>
+    </div>
+  </section>
+
+  <!-- Contact Me Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p><strong>Phone No.:</strong> 9444208031</p>
+    <p><strong>Email:</strong> salman14072004@gmail.com</p>
+    <p><strong>College Email:</strong> 220171601070@crescent.education</p>
+    <p><strong>Address:</strong> No. 2/5 Mosque Garden, 1st Street, Saligramam, Chennai-600093</p>
+  </section>
+
+  <!-- Explore More Section -->
+  <section class="explore-more" id="explore-more">
+    <div class="section-buttons">
+      <a href="skills.html" class="section-button">Skills</a>
+      <a href="education.html" class="section-button">Education</a>
+      <a href="work_experience.html" class="section-button">Work Experience</a>
+      <a href="nptel.html" class="section-button">NPTEL Certifications</a>
+      <a href="courses.html" class="section-button">Course Completion</a>
+      <a href="winning.html" class="section-button">Winning in Symposium</a>
+      <a href="participation.html" class="section-button">Participation in Symposium</a>
+      <a href="workshop.html" class="section-button">Workshops</a>
+      <a href="webinar.html" class="section-button">Webinars</a>
+      <a href="bootcamp.html" class="section-button">BootCamp</a>
+      <a href="activity.html" class="section-button">Extracurricular Activity</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2024 M. Mohammed Salman
+  </footer>
+
+</body>
+</html>
